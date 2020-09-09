@@ -1,5 +1,7 @@
 body {
-  background-image: url("images/18393.jpg");
+  background: url("images/18393.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
   font-family: 'Nunito', sans-serif;
 }
 
