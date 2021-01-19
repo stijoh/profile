@@ -1,5 +1,6 @@
 body {
   font-family: 'Nunito', sans-serif;
+  background-color: #F3F1F9;
 }
 
 a {
@@ -10,8 +11,8 @@ h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
 h1 {
-  color: #666699;
-  font-weight: 800;
+  color: #006699;
+  font-weight: 400;
   font-size: 32px;
 }
 
@@ -24,8 +25,7 @@ h2 {
 a {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: #9999FF;
-  font-size: 16px;
+  color: black;
 }
 a:hover {
   color: black;
@@ -183,7 +183,7 @@ a:hover {
 
 .box-div {
   background-color: white;
-  padding: 40px;
+  padding: 10px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   border-radius: 4px;
   margin: 20px 0px;
@@ -206,14 +206,78 @@ a:hover {
   padding-left: 0px;
 }
 
+.list-portfolio {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-portfolio li {
+  display: inline;
+  padding: 10px;
+}
+
 .list li {
   display: inline;
   padding: 10px;
 }
 .list i {
   font-size: 50px;
-  color: #9999FF;
+  color: #006699;
 }
 .list i:hover {
   color: black;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 5; }
+  .div2 { grid-area: 2 / 1 / 3 / 3;
+          text-align: left; }
+  .div3 { grid-area: 2 / 3 / 3 / 5; }
+  .div4 { grid-area: 3 / 1 / 4 / 3;
+          text-align: left;  }
+  .div5 { grid-area: 3 / 3 / 4 / 5; }
+  .div6 { grid-area: 4 / 1 / 5 / 3;
+          text-align: left;  }
+  .div7 { grid-area: 4 / 3 / 5 / 5; }
+
+video {
+  object-fit: cover;
+}
+
+.btn {
+  background-color: #006699;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 3; }
+  .div2 { grid-area: 2 / 1 / 3 / 3; }
+  .div3 { grid-area: 3 / 1 / 4 / 3; }
+  .div4 { grid-area: 4 / 1 / 5 / 3; }
+  .div5 { grid-area: 5 / 1 / 6 / 3; }
+  .div6 { grid-area: 6 / 1 / 7 / 3; }
+  .div7 { grid-area: 7 / 1 / 8 / 3; }
 }
